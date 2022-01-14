@@ -1,0 +1,6 @@
+{
+    "help1":"`help` - wyświetla dostępne komendy\n`register` - rejestruje użytkownika w bazie\n`ping` - ~~rozpoczyna grę w Ping Ponga~~ wyświetla informację o wielkości opóźnienia pomiędzy wysłaniem wiadomości a jej otrzymaniem\n`info` - wyświetla informacje o bocie",
+    "help2":"`emotes` - wyświetla kolekcję emotek gracza\n`inv` - wyświetla ekwipunek gracza\n`use`[!] - pozwala wybrać jeden z przedmiotów w ekwipunku\n`money` - wyświetla stan konta gracza\n`shop` - wyświetla oferty w sklepie\n[!]`buy` - pozwala zakupić jeden z przedmiotów w sklepie\n`itemsinfo` - wyświetla informacje o przedmiotach\n`freeaward` - pozwala odebrać codzienną nagrodę",
+
+    "addinfo":"[!] - ta komenda wpisuje twoje ID do bazy krótkotrwałej tworząc 'sesję'. Podczas trwania sesji, bot 'wysłucha' twojej następnej wiadomości (nawet, jeżeli nie jest to komenda) i przyjmie ją, jako twoją odpowiedź."
+}

@@ -1,0 +1,6 @@
+{
+    "aboutrandpin":"Zawiera jedną losową emotkę z losowej rzadkości. Szansę na zdobycie poszczególnych rodzajów emotek są następujące:\nZwykła - {0}%\nRzadka - {1}%\nEpicka - {2}%",
+    "aboutepicpin":"Zawiera jedną losową emotkę z epickiej rzadkości.",
+
+    "aboutpins":"Każdy zestaw postaci składa się z 9 emotek:\n<a:bit_normal_an:853563446041378836> <a:bit_happy_an:853571389973856266> <a:bit_sad_an:853334433431289866> <a:bit_angry_an:853586532766318592> - Zwykłe emotki (Normal, Happy, Sad, Angry)\n<a:bit_gg_an:843421957303042078> <a:bit_clap_an:880829595341959238> - Rzadkie emotki (GG, Clap)\n<a:bit_thanks_an:853549221712887829> <a:bit_phew_an:853020481111588934> <a:bit_special_an:854046069498445855> - Epickie emotki (Thanks, Phew, Special)"
+}

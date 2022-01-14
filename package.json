@@ -1,0 +1,17 @@
+{
+  "name": "discordpass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "jest": "^27.4.7",
+    "self-reload-json": "^0.4.0",
+    "xhr2": "^0.2.1"
+  }
+}

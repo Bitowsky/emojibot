@@ -1,0 +1,203 @@
+{
+    "allemotes":[
+        ["<a:bit_normal_an:853563446041378836>", 1, "Bitowsky Normal", 1],
+        ["<a:bit_happy_an:853571389973856266>", 2, "Bitowsky Happy", 1],
+        ["<a:bit_sad_an:853334433431289866>", 3, "Bitowsky Sad", 1],
+        ["<a:bit_angry_an:853586532766318592>", 4, "Bitowsky Angry", 1],
+        ["<a:bit_gg_an:843421957303042078>", 5, "Bitowsky GG", 2],
+        ["<a:bit_clap_an:880829595341959238>", 6, "Bitowsky Clap", 2],
+        ["<a:bit_thanks_an:853549221712887829>", 7, "Bitowsky Thanks", 3],
+        ["<a:bit_phew_an:853020481111588934>", 8, "Bitowsky Phew", 3],
+        ["<a:bit_special_an:854046069498445855>", 9, "Bitowsky Special", 3],
+        
+        ["<a:pierre_normal_an:854625325362708530>", 10, "Pierre Normal", 1],
+        ["<a:pierre_happy_an:854625375648088084>", 11, "Pierre Happy", 1],
+        ["<a:pierre_sad_an:854625407306039317>", 12, "Pierre Sad", 1],
+        ["<a:pierre_angry_an:854625482216701983>", 13, "Pierre Angry", 1],
+        ["<a:pierre_gg_an:854625521588895745>", 14, "Pierre GG", 2],
+        ["<a:pierre_clap_an:880840738361999381>", 15, "Pierre Clap", 2],
+        ["<a:pierre_thanks_an:854625504895696907>", 16, "Pierre Thanks", 3],
+        ["<a:pierre_phew_an:854625538450784276>", 17, "Pierre Phew", 3],
+        ["<a:pierre_special_an:854625558372548618>", 18, "Pierre Special", 3],
+        
+        ["<a:ivip_normal_an:856199661965279252>", 19, "Ivip Normal", 1],
+        ["<a:ivip_happy_an:856203065316474932>", 20, "Ivip Happy", 1],
+        ["<a:ivip_sad_an:856299225377669120>", 21, "Ivip Sad", 1],
+        ["<a:ivip_angry_an:856299417316229132>", 22, "Ivip Angry", 1],
+        ["<a:ivip_gg_an:856299594220175391>", 23, "Ivip GG", 2],
+        ["<a:ivip_clap_an:880834459493093436>", 24, "Ivip Clap", 2],
+        ["<a:ivip_thanks_an:856299571431604264>", 25, "Ivip Thanks", 3],
+        ["<a:ivip_phew_an:856299628026527804>", 26, "Ivip Phew", 3],
+        ["<a:ivip_special_an:856299716701454377>", 27, "Ivip Special", 3],
+    
+        ["<a:kg_normal_an:872818425825738763>", 28, "Kaseta Gamer Normal", 1],
+        ["<a:kg_happy_an:872818445480251453>", 29, "Kaseta Gamer Happy", 1],
+        ["<a:kg_sad_an:872818459615064074>", 30, "Kaseta Gamer Sad", 1],
+        ["<a:kg_angry_an:872818475696013322>", 31, "Kaseta Gamer Angry", 1],
+        ["<a:kg_gg_an:872818499985240094>", 32, "Kaseta Gamer GG", 2],
+        ["<a:kg_clap_an:880829671476961341>", 33, "Kaseta Gamer Clap", 2],
+        ["<a:kg_thanks_an:872818486265675786>", 34, "Kaseta Gamer Thanks", 3],
+        ["<a:kg_phew_an:872818513520238633>", 35, "Kaseta Gamer Phew", 3],
+        ["<a:kg_special_an:872818526338048032>", 36, "Kaseta Gamer Special", 3],
+    
+        ["<a:med_normal_an:879869545483997225>", 37, "Medpan Normal", 1],
+        ["<a:med_happy_an:879869655014072341>", 38, "Medpan Happy", 1],
+        ["<a:med_sad_an:879873448636219422>", 39, "Medpan Sad", 1],
+        ["<a:med_angry_an:879873534543925248>", 40, "Medpan Angry", 1],
+        ["<a:med_gg_an:879873705637998672>", 41, "Medpan GG", 2],
+        ["<a:med_clap_an:880845406039334923>", 42, "Medpan Clap", 2],
+        ["<a:med_thanks_an:879873619067535462>", 43, "Medpan Thanks", 3],
+        ["<a:med_phew_an:879873788680994958>", 44, "Medpan Phew", 3],
+        ["<a:med_special_an:879873867043176540>", 45, "Medpan Special", 3],
+    
+        ["<a:tob_normal_an:858008601129123871>", 46, "Tobaj Normal", 1],
+        ["<a:tob_happy_an:858008653940654080>", 47, "Tobaj Happy", 1],
+        ["<a:tob_sad_an:858008693764390913>", 48, "Tobaj Sad", 1],
+        ["<a:tob_angry_an:858008734864637972>", 49, "Tobaj Angry", 1],
+        ["<a:tob_gg_an:858010727298367488>", 50, "Tobaj GG", 2],
+        ["<a:tob_clap_an:880918952887341076>", 51, "Tobaj Clap", 2],
+        ["<a:tob_thanks_an:858008776140390410>", 52, "Tobaj Thanks", 3],
+        ["<a:tob_phew_an:858010808319606794>", 53, "Tobaj Phew", 3],
+        ["<a:tob_special_an:858010860889702420>", 54, "Tobaj Special", 3],
+    
+        ["<a:rose_normal_an:871373368199368725>", 55, "Rose Normal", 1],
+        ["<a:rose_happy_an:871373413103575090>", 56, "Rose Happy", 1],
+        ["<a:rose_sad_an:871373465670811718>", 57, "Rose Sad", 1],
+        ["<a:rose_angry_an:871373512315666432>", 58, "Rose Angry", 1],
+        ["<a:rose_gg_an:871373589385986048>", 59, "Rose GG", 2],
+        ["<a:rose_clap_an:880920491559378985>", 60, "Rose Clap", 2],
+        ["<a:rose_thanks_an:871373554543902760>", 61, "Rose Thanks", 3],
+        ["<a:rose_phew_an:871373628661452841>", 62, "Rose Phew", 3],
+        ["<a:rose_special_an:871373668368928778>", 63, "Rose Special", 3],
+    
+        ["<a:janex_normal_an:866318760183726110>", 64, "Janex Normal", 1],
+        ["<a:janex_happy_an:866318822348292096>", 65, "Janex Happy", 1],
+        ["<a:janex_sad_an:866318864987455529>", 66, "Janex Sad", 1],
+        ["<a:janex_angry_an:866318904656658482>", 67, "Janex Angry", 1],
+        ["<a:janex_gg_an:866322704113991720>", 68, "Janex GG", 2],
+        ["<a:janex_clap_an:880924205196144681>", 69, "Janex Clap", 2],
+        ["<a:janex_thanks_an:866321424053829633>", 70, "Janex Thanks", 3],
+        ["<a:janex_phew_an:866322759377485855>", 71, "Janex Phew", 3],
+        ["<a:janex_special_an:866333262087323649>", 72, "Janex Special", 3],
+    
+        ["<a:6zl_normal_an:863459364126720040>", 73, "Sześciozłotówka Normal", 1],
+        ["<a:6zl_happy_an:863463762660294672>", 74, "Sześciozłotówka Happy", 1],
+        ["<a:6zl_sad_an:863463780360126484>", 75, "Sześciozłotówka Sad", 1],
+        ["<a:6zl_angry_an:863464766101782549>", 76, "Sześciozłotówka Angry", 1],
+        ["<a:6zl_gg_an:863464848888168449>", 77, "Sześciozłotówka GG", 2],
+        ["<a:6zl_clap_an:880922871189356576>", 78, "Sześciozłotówka Clap", 2],
+        ["<a:6zl_thanks_an:863464803955638323>", 79, "Sześciozłotówka Thanks", 3],
+        ["<a:6zl_phew_an:863464885622931537>", 80, "Sześciozłotówka Phew", 3],
+        ["<a:6zl_special_an:863464924323119114>", 81, "Sześciozłotówka Special", 3]],
+    
+    "normalemoji":[
+        "<a:bit_normal_an:853563446041378836>",
+        "<a:bit_happy_an:853571389973856266>",
+        "<a:bit_sad_an:853334433431289866>", 
+        "<a:bit_angry_an:853586532766318592>",
+
+        "<a:pierre_normal_an:854625325362708530>",
+        "<a:pierre_happy_an:854625375648088084>",
+        "<a:pierre_sad_an:854625407306039317>",
+        "<a:pierre_angry_an:854625482216701983>",
+
+        "<a:ivip_normal_an:856199661965279252>",
+        "<a:ivip_happy_an:856203065316474932>",
+        "<a:ivip_sad_an:856299225377669120>",
+        "<a:ivip_angry_an:856299417316229132>",
+
+        "<a:kg_normal_an:872818425825738763>",
+        "<a:kg_happy_an:872818445480251453>",
+        "<a:kg_sad_an:872818459615064074>",
+        "<a:kg_angry_an:872818475696013322>",
+    
+        "<a:med_normal_an:879869545483997225>",
+        "<a:med_happy_an:879869655014072341>",
+        "<a:med_sad_an:879873448636219422>",
+        "<a:med_angry_an:879873534543925248>",
+    
+        "<a:tob_normal_an:858008601129123871>",
+        "<a:tob_happy_an:858008653940654080>",
+        "<a:tob_sad_an:858008693764390913>", 
+        "<a:tob_angry_an:858008734864637972>",
+    
+        "<a:rose_normal_an:871373368199368725>",
+        "<a:rose_happy_an:871373413103575090>",
+        "<a:rose_sad_an:871373465670811718>", 
+        "<a:rose_angry_an:871373512315666432>",
+    
+        "<a:janex_normal_an:866318760183726110>",
+        "<a:janex_happy_an:866318822348292096>", 
+        "<a:janex_sad_an:866318864987455529>",
+        "<a:janex_angry_an:866318904656658482>",
+    
+        "<a:6zl_normal_an:863459364126720040>",
+        "<a:6zl_happy_an:863463762660294672>", 
+        "<a:6zl_sad_an:863463780360126484>",
+        "<a:6zl_angry_an:863464766101782549>"],
+        
+    "rareemoji":[
+        "<a:bit_gg_an:843421957303042078>",
+        "<a:bit_clap_an:880829595341959238>",
+        
+        "<a:pierre_gg_an:854625521588895745>",
+        "<a:pierre_clap_an:880840738361999381>",
+
+        "<a:ivip_gg_an:856299594220175391>", 
+        "<a:ivip_clap_an:880834459493093436>",
+    
+        "<a:kg_gg_an:872818499985240094>", 
+        "<a:kg_clap_an:880829671476961341>",
+    
+        "<a:med_gg_an:879873705637998672>", 
+        "<a:med_clap_an:880845406039334923>",
+    
+        "<a:tob_gg_an:858010727298367488>", 
+        "<a:tob_clap_an:880918952887341076>",
+    
+        "<a:rose_gg_an:871373589385986048>", 
+        "<a:rose_clap_an:880920491559378985>",
+    
+        "<a:janex_gg_an:866322704113991720>", 
+        "<a:janex_clap_an:880924205196144681>",
+    
+        "<a:6zl_gg_an:863464848888168449>", 
+        "<a:6zl_gg_clap:880922871189356576>"],
+        
+    "epicemoji":[
+        "<a:bit_thanks_an:853549221712887829>",
+        "<a:bit_phew_an:853020481111588934>",
+        "<a:bit_special_an:854046069498445855>",
+
+        "<a:pierre_thanks_an:854625504895696907>",
+        "<a:pierre_phew_an:854625538450784276>", 
+        "<a:pierre_special_an:854625558372548618>",
+
+        "<a:ivip_thanks_an:856299571431604264>",
+        "<a:ivip_phew_an:856299628026527804>",
+        "<a:ivip_special_an:856299716701454377>",
+    
+        "<a:kg_thanks_an:872818486265675786>",
+        "<a:kg_phew_an:872818513520238633>",
+        "<a:kg_special_an:872818526338048032>",
+    
+        "<a:med_thanks_an:879873619067535462>",
+        "<a:med_phew_an:879873788680994958>",
+        "<a:med_special_an:879873867043176540>",
+    
+        "<a:tob_thanks_an:858008776140390410>",
+        "<a:tob_phew_an:858010808319606794>",
+        "<a:tob_special_an:858010860889702420>",
+    
+        "<a:rose_thanks_an:871373554543902760>",
+        "<a:rose_phew_an:871373628661452841>",
+        "<a:rose_special_an:871373668368928778>",
+    
+        "<a:janex_thanks_an:866321424053829633>", 
+        "<a:janex_phew_an:866322759377485855>",
+        "<a:janex_special_an:866333262087323649>",
+    
+        "<a:6zl_thanks_an:863464803955638323>",
+        "<a:6zl_phew_an:863464885622931537>",
+        "<a:6zl_special_an:863464924323119114>"]
+}

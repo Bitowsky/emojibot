@@ -1,0 +1,15 @@
+https://discord.com/api/oauth2/authorize?client_id=925106948821647421&permissions=281600&scope=bot
+
+EMOJI BOT - Kolekcjonuj emotki!
+
+Zbieraj emotki do swojej kolekcji. W jakim celu? Dla zabawy!
+
+Ponad 80+ emotek do zebrania!
+
+Zwykłe, rzadkie i epickie! Im wyższa rzadkość, tym większa satysfakcja!
+
+Odwiedzaj codziennie sklep po nowe oferty i wydawaj swoje Emoticoiny na cenne emotki! <a:emoticoin:930438839829426186>
+
+Zbieraj darmowe nagrody za...ciągłe branie udziału w zabawie?
+
+Aby rozpocząć swoją przygodę, użyj komendy `${config.prefix}register`!
