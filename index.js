@@ -12,7 +12,6 @@ const { channel } = require('diagnostics_channel');
 const { stringify } = require('querystring');
 var points = 0
 const trusted = require('./trusted.json')
-const { Octokit } = require("@octokit/core");
 
 
 
@@ -58,7 +57,7 @@ var footertext = `${config.name}; Wersja ${config.ver}; ${config.author} 2022 (T
 //console.log(MessageEmbed)
 
 // GitHub Crap
-
+/*
 const path = require('path')
 const git = require('isomorphic-git')
 const http = require('isomorphic-git/http/node')
@@ -67,7 +66,7 @@ const http = require('isomorphic-git/http/node')
 const dir = path.join(process.cwd(), 'test-clone')
 git.clone({ fs, http, dir, url: 'https://github.com/Bitowsky/emojibot' }).then(console.log)
 
-
+*/
 
 
 
