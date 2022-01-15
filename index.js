@@ -1978,5 +1978,4 @@ function randomIntFromInterval(min, max) { // min and max included
 }
   
 
-client.login('OTI1MTA2OTQ4ODIxNjQ3NDIx.YcoS_A.t7eInWxQjcXEB7FS8nxrAH-GsWI')
-//client.login(process.env.TOKEN)
+client.login(process.env.TOKEN)
