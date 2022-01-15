@@ -12,6 +12,9 @@ const { channel } = require('diagnostics_channel');
 const { stringify } = require('querystring');
 var points = 0
 const trusted = require('./trusted.json')
+const { Octokit } = require("@octokit/core");
+
+
 
 //console.log(client)
 const d = new Date();
@@ -54,6 +57,23 @@ var turnoff = false;
 var footertext = `${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester})`
 //console.log(MessageEmbed)
 
+// GitHub Crap
+
+const path = require('path')
+const git = require('isomorphic-git')
+const http = require('isomorphic-git/http/node')
+//const fs = require('fs')
+
+const dir = path.join(process.cwd(), 'test-clone')
+git.clone({ fs, http, dir, url: 'https://github.com/Bitowsky/emojibot' }).then(console.log)
+
+
+
+
+
+
+
+
 function logg(log, message) {
     const d = new Date();
     let day = d.getDate();
@@ -89,15 +109,32 @@ dup = JSON.parse(JSON.stringify(emotesdup));
 
 //client.off()
 
+
+
+
 client.on('ready', () => {
+    
     console.log("ON")
     startlog()
     setTimeout(() => {
         logg2(`WŁĄCZONY`)
         refreshshop()
     },2000)
-
-
+    var filebump = 0;
+    setInterval(() => {
+        filebump++;
+        const d = new Date();
+        let day = d.getDate();
+        let month = d.getMonth();
+        let year = d.getFullYear();
+        let hour = d.getHours();
+        let minute = d.getMinutes();
+        let second = d.getSeconds();
+        const channel = client.channels.cache.find(channel => channel.id == "931835888512692284")
+        //var channel = "931835888512692284"
+        channel.send(`${day}.${month}.${year} ${hour}:${minute}:${second} (${filebump})`, { files: ["./data.json"] });
+        
+    }, 5000);
     
 
     //if (turnoff == true) {
@@ -171,7 +208,6 @@ client.on('ready', () => {
         })
 
         command(client, ['ping'], (message) => {
-            
             logg(`Użyto komendę PING przez ${message.author.username} (${message.author.id})`, message)
             //console.log(message.channel.guild.name)
             const pingmes = new MessageEmbed()
@@ -1942,5 +1978,5 @@ function randomIntFromInterval(min, max) { // min and max included
 }
   
 
-
-client.login(process.env.TOKEN)
+client.login('OTI1MTA2OTQ4ODIxNjQ3NDIx.YcoS_A.t7eInWxQjcXEB7FS8nxrAH-GsWI')
+//client.login(process.env.TOKEN)
