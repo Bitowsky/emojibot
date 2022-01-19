@@ -53,7 +53,8 @@ console.log(`logs ${logs.data.length}`)
 // Other
 
 var turnoff = false;
-var footertext = `${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester})`
+var logtick = 0;
+var footertext = `${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`
 //console.log(MessageEmbed)
 
 // GitHub Crap
@@ -119,9 +120,9 @@ client.on('ready', () => {
         logg2(`WŁĄCZONY`)
         refreshshop()
     },2000)
-    var filebump = 0;
+    //var filebump = 0;
     setInterval(() => {
-        filebump++;
+        logtick++;
         const d = new Date();
         let day = d.getDate();
         let month = d.getMonth();
@@ -131,7 +132,7 @@ client.on('ready', () => {
         let second = d.getSeconds();
         const channel = client.channels.cache.find(channel => channel.id == "931835888512692284")
         //var channel = "931835888512692284"
-        channel.send(`${day}.${month}.${year} ${hour}:${minute}:${second} (${filebump})`, { files: ["./data.json"] });
+        channel.send(`${day}.${month}.${year} ${hour}:${minute}:${second} (${logtick})`, { files: ["./data.json"] });
         
     }, 5000);
     
