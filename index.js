@@ -54,7 +54,8 @@ console.log(`logs ${logs.data.length}`)
 
 var turnoff = false;
 var logtick = 0;
-var footertext = `${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`
+//var footertext = `${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`
+
 //console.log(MessageEmbed)
 
 // GitHub Crap
@@ -160,7 +161,7 @@ client.on('ready', () => {
                 )
                 
                 .addField(`\u200B`, "Prefix bota (znak, którym musisz rozpocząć komendę) to `" + config.prefix + "`")
-                .setFooter(footertext)
+                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                 //.setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
             message.channel.send(helpmes)
         })
@@ -180,7 +181,7 @@ client.on('ready', () => {
                         const alreadyinbase = new MessageEmbed()
                             .setColor('#666666')
                             .setTitle(`Ale twoje ID już jest zarejestrowane!`)
-                            .setFooter(footertext)
+                            .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                         message.channel.send(alreadyinbase)
                         logg(`Próba rejestracji użytkownika ${message.author.username} (${message.author.id}): Niepowodzenie - Już w bazie`, message)
                     } else {
@@ -196,7 +197,7 @@ client.on('ready', () => {
                                 .setTitle(`Zarejestrowano!`)
                                 .setDescription(`Dzięki, że się zarejestrowałeś(aś) **${message.author.username}**! W nagrodę otrzymujesz:\n - ${regprof.inv[0]}x Losowa Emotka <:happypin:930475315086622720>\n - ${regprof.inv[1]}x Losowa Epicka Emotka <:epicpin:930089771127164929>\n - ${regprof.money} Emoticoinów <a:emoticoin:930438839829426186>\n\nŻyczymy miłego kolekcjonowania emotek!`)
                                 .addField('\u200B', `Jeśli nie wiesz co dalej, skorzystaj z komendy ${config.prefix}help`)
-                                .setFooter(footertext)
+                                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                             message.channel.send(registered)
                             logg(`Zarejestrowano nowego użytkownika: ${message.author.username} (${message.author.id})`, message)
                         }
@@ -214,7 +215,7 @@ client.on('ready', () => {
                 .setColor('#005522')
                 .setTitle(`Pong! :ping_pong:`)
                 .setDescription(`Odpowiedziałem z prędkością **${Math.round(client.ws.ping)}ms**!`)
-                .setFooter(footertext)
+                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
             message.channel.send(pingmes)
         })
 
@@ -413,7 +414,7 @@ client.on('ready', () => {
                                         { name: `Emotki przedstawiające ${emotesinfo.repres[7][0]} (${minicount[7]}/${emotesinfo.repres[7][1]})`, value: `${emotes8}` },
                                         { name: `Emotki przedstawiające ${emotesinfo.repres[8][0]} (${minicount[8]}/${emotesinfo.repres[8][1]})`, value: `${emotes9}` }
                                 )
-                                    .setFooter(footertext)
+                                    .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                 message.channel.send(emojistats)
                             }
                             
@@ -450,7 +451,7 @@ client.on('ready', () => {
                             { name: "<:epicpin:930089771127164929> Losowa Epicka Emotka", value: `Posiadasz: ${inv.inv[loop][1]}` },
                             { name: "\u200B", value:`Aby skorzystać z przedmiotu, użyj komendy ${config.prefix}use\nAby dowiedzieć się więcej o tych przedmiotach, skorzystaj z komendy ${config.prefix}itemsinfo`}
                         )
-                        .setFooter(footertext)
+                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                         message.channel.send(invinfo)
                         
                     } else if (loop == inv.user.length - 1) {
@@ -483,7 +484,7 @@ client.on('ready', () => {
                                     { name: "[ID: 2] <:epicpin:930089771127164929> Losowa Epicka Emotka", value: `Posiadasz: ${inv[loop][1]}` },
                                     { name: "\u200B", value:`Nieodpowiedzenie w przeciągu ${usetimelimit} sekund (lub skorzystanie z komendy ${config.prefix}cancel) będzie skutkowało anulowaniem komendy.`}
                                 )
-                                .setFooter(footertext)
+                                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                             message.channel.send(useinfo)
                         }
                     } else if (loop == checkuser.user.length - 1) {
@@ -503,7 +504,7 @@ client.on('ready', () => {
                     const cancel = new MessageEmbed()
                         .setColor('#ee0000')
                         .setTitle(`Sesja Anulowana`)
-                        .setFooter(footertext)
+                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                         //.setDescription(`W tej chwili liczba posiadanego przedmiotu wynosi ${inv.inv[loop][0]}`)
                     const msg = message.channel.send(cancel)
                 }
@@ -543,7 +544,7 @@ client.on('ready', () => {
                                                 const usingitem = new MessageEmbed()
                                                     .setColor('#22eeff')
                                                     .setTitle(`<:happypin:930475315086622720> Losowanie Emotki... <:happypin:930475315086622720>`)
-                                                    .setFooter(footertext)
+                                                    .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                     //.setDescription(`W tej chwili liczba posiadanego przedmiotu wynosi ${inv.inv[loop][0]}`)
                                                 const msg = message.channel.send(usingitem)
                                                 .then ((msg) => {setTimeout(function(){
@@ -552,7 +553,7 @@ client.on('ready', () => {
                                                         .setColor('#22eeff')
                                                         .setTitle(`<:happypin:930475315086622720> Losowanie Emotki... <:happypin:930475315086622720>`)
                                                         .setDescription(`Trafiono...`)
-                                                        .setFooter(footertext)
+                                                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                     msg.edit(usingitem)
                                                     .then ((msg) => {setTimeout(function(){
                                                         gotwhat = getemoji(message)
@@ -570,7 +571,7 @@ client.on('ready', () => {
                                                                 {name:`${gotwhat}`, value:"\u200B"},
                                                                 {name:`${gotwhatname}`, value: "\u200B", inline: true}
                                                             )
-                                                            .setFooter(footertext)
+                                                            .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                             msg.edit(usingitem)
                                                         } else {
                                                             dup = JSON.parse(JSON.stringify(emotesdup));
@@ -588,7 +589,7 @@ client.on('ready', () => {
                                                                 {name:gotwhatname, value: "\u200B", inline: true},
                                                                 {name:`Duplikat! Zwrócono za niego ${refund} <a:emoticoin:930438839829426186>`, value:"\u200B"}
                                                             )
-                                                            .setFooter(footertext)
+                                                            .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                             msg.edit(usingitem)
                                                         }
                                                     }, 3000)})
@@ -599,7 +600,7 @@ client.on('ready', () => {
                                                     .setColor('#ee2222')
                                                     .setTitle(`Brak przedmiotu`)
                                                     .setDescription(`Nie posiadasz tego przedmiotu.`)
-                                                    .setFooter(footertext)
+                                                    .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                 message.channel.send(notenough)
                                             }
                                         } else if (parseInt(message.content) == 2) { // EPICKA EMOTKA
@@ -610,7 +611,7 @@ client.on('ready', () => {
                                                 const usingitem = new MessageEmbed()
                                                     .setColor('#22eeff')
                                                     .setTitle(`<:epicpin:930089771127164929> Losowanie Epickiej Emotki <:epicpin:930089771127164929>`)
-                                                    .setFooter(footertext)
+                                                    .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                     //.setDescription(`W tej chwili liczba posiadanego przedmiotu wynosi ${inv.inv[loop][0]}`)
                                                 const msg = message.channel.send(usingitem)
                                                 .then ((msg) => {setTimeout(function(){
@@ -618,7 +619,7 @@ client.on('ready', () => {
                                                         .setColor('#22eeff')
                                                         .setTitle(`<:epicpin:930089771127164929> Losowanie Epickiej Emotki <:epicpin:930089771127164929>`)
                                                         .setDescription(`Trafiono...`)
-                                                        .setFooter(footertext)
+                                                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                     msg.edit(usingitem)
                                                     .then ((msg) => {setTimeout(function(){
                                                         gotwhat = getepicemoji(message)
@@ -634,7 +635,7 @@ client.on('ready', () => {
                                                                 {name:`${gotwhat}!`, value:"\u200B"},
                                                                 {name:gotwhatname, value: "\u200B", inline: true}
                                                             )
-                                                            .setFooter(footertext)
+                                                            .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                             msg.edit(usingitem)
                                                         } else {
                                                             dup = JSON.parse(JSON.stringify(emotesdup));
@@ -652,7 +653,7 @@ client.on('ready', () => {
                                                                 {name:gotwhatname, value: "\u200B", inline: true},
                                                                 {name:`Duplikat! Zwrócono za niego ${refund} <a:emoticoin:930438839829426186>`, value:"\u200B"}
                                                             )
-                                                            .setFooter(footertext)
+                                                            .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                             msg.edit(usingitem)
                                                         }
                                                     }, 3000)})
@@ -663,7 +664,7 @@ client.on('ready', () => {
                                                     .setColor('#ee2222')
                                                     .setTitle(`Brak przedmiotu`)
                                                     .setDescription(`Nie posiadasz tego przedmiotu.`)
-                                                    .setFooter(footertext)
+                                                    .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                 message.channel.send(notenough)
                                             }
                                         }
@@ -674,7 +675,7 @@ client.on('ready', () => {
                                             .setColor('#ee2222')
                                             .setTitle(`Niepoprawne ID przedmiotu`)
                                             .setDescription(`Podane ID nie pasuje do żadnego z przedstawionych przedmiotów. Upewnij się, że podałeś poprawny identyfikator (znajduje się on po lewej stronie każdego z przedmiotów).`)
-                                            .setFooter(footertext)
+                                            .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                         message.channel.send(incorrectid)
                                     }
                                 } else {
@@ -737,7 +738,7 @@ client.on('ready', () => {
                                                         .setColor('#00ee00')
                                                         .setTitle(`Zakupiono!`)
                                                         .setDescription(`Pomyślnie zakupiono **${listemotes.allemotes[itemid][2]} ${listemotes.allemotes[itemid][0]}** za **${itemprice} <a:emoticoin:930438839829426186>**!`)
-                                                        .setFooter(footertext)
+                                                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                     message.channel.send(buyed)
                                                 } else {
                                                     cantbuydup(message, itemid)
@@ -751,7 +752,7 @@ client.on('ready', () => {
                                                     .setColor('#00ee00')
                                                     .setTitle(`Zakupiono!`)
                                                     .setDescription(`Pomyślnie zakupiono **${shopitems.stuff[special1][2]} ${shopitems.stuff[special1][3]}** za **${itemprice} <a:emoticoin:930438839829426186>**! Przedmiot został dodany do twojego ekwipunka (${config.prefix}inv)`)
-                                                    .setFooter(footertext)
+                                                    .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                                 message.channel.send(buyed)
                                             }
                                             itemidd = 0;
@@ -768,7 +769,7 @@ client.on('ready', () => {
                                 .setColor('#ee2222')
                                 .setTitle(`Niepoprawne ID przedmiotu`)
                                 .setDescription(`Podane ID nie pasuje do żadnego z przedstawionych przedmiotów. Upewnij się, że podałeś poprawny identyfikator (znajduje się on po lewej stronie każdego z przedmiotów).`)
-                                .setFooter(footertext)
+                                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                             message.channel.send(incorrectid)
                             goon = true;
                         }
@@ -801,7 +802,7 @@ client.on('ready', () => {
                         .addFields(
                             { name: `Posiadasz: ${money[loop]} <a:emoticoin:930438839829426186>`, value: `\u200B` }
                         )
-                        .setFooter(footertext)
+                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                         message.channel.send(moneyinfo)
                         
                     } else if (loop == data.user.length - 1) {
@@ -863,7 +864,7 @@ client.on('ready', () => {
                             { name: `\u200B`, value: `Oznaczenie ${dupinchatsign}oznacza, że już posiadasz tą emotkę. Nie możesz teraz jej kupić ponownie.`},
                             { name: `\u200B`, value: `Sklep odświeża się codziennie o ${shopset.refreshhour}:${shopset.refreshminute}`}
                         )
-                        .setFooter(footertext)
+                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                         
                         message.channel.send(moneyinfo)
                         
@@ -898,7 +899,7 @@ client.on('ready', () => {
                                     { name: `Specjalne Przedmioty Dnia:`, value: `[ID: 5] ${shopitems.stuff[special1][3]} - ${shopitems.stuff[special1][2]} - ${shopitems.stuff[special1][1]} <a:emoticoin:930438839829426186>`},
                                     { name: "\u200B", value:`Nieodpowiedzenie w przeciągu ${usetimelimit} sekund (lub skorzystanie z komendy ${config.prefix}cancel) będzie skutkowało anulowaniem komendy.`}
                                     )
-                                .setFooter(footertext)
+                                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                                 
                             message.channel.send(buyinfo)
                         }
@@ -931,7 +932,7 @@ client.on('ready', () => {
                             { name: `\u200B`, value: `\u200B`},
                             { name: `Dodatkowe informacje o emotkach:`, value: `${itemsinfo.aboutpins}`},
                         )
-                        .setFooter(footertext)
+                        .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                         
                         message.channel.send(itemsinfomes)
                         
@@ -962,14 +963,14 @@ client.on('ready', () => {
                                 .setColor('#335533')
                                 .setTitle(`Odebrano darmową nagrodę`)
                                 .setDescription(`Otrzymano ${freeawardname}\n\nWróć jutro ponownie wraz z odświeżeniem sklepu (${shopset.refreshhour}:${shopset.refreshminute})`)
-                                .setFooter(footertext)
+                                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                             message.channel.send(freeawardclaimed)
                         } else {
                             const freeawardclaimed = new MessageEmbed()
                                 .setColor('#335533')
                                 .setTitle(`Już odebrałeś(aś) swoją darmową nagrodę!`)
                                 .setDescription(`Wróć jutro ponownie wraz z odświeżeniem sklepu (${shopset.refreshhour}:${shopset.refreshminute})`)
-                                .setFooter(footertext)
+                                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                             message.channel.send(freeawardclaimed)
                         }
                     } else if (loop == data.user.length - 1) {
@@ -988,7 +989,7 @@ client.on('ready', () => {
                 .setDescription(`Zbieraj emotki do swojej kolekcji. W jakim celu? Dla zabawy!\n\nPonad 80+ emotek do zebrania!\n\nZwykłe, rzadkie i epickie! Im wyższa rzadkość, tym większa satysfakcja!\n\nOdwiedzaj codziennie sklep po nowe oferty i wydawaj swoje Emoticoiny na cenne emotki! <a:emoticoin:930438839829426186>\n\nZbieraj darmowe nagrody za...ciągłe branie udziału w zabawie?\n\nAby rozpocząć swoją przygodę, użyj komendy **${config.prefix}register**!`)
                 .addField(`\u200B`,`Aktualna wersja: ${config.ver}`)
                 .setImage('https://i.ibb.co/NKkjnbV/emojibotad.gif')
-                .setFooter(footertext)
+                .setFooter(`${config.name}; Wersja ${config.ver}; ${config.author} 2022 (Testował: ${config.tester}); LogTick ${logtick}`)
                 
             message.channel.send(info)
         })
